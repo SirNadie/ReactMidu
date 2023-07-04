@@ -1,11 +1,15 @@
-export function TwitterFollowCard() {
+export function TwitterFollowCard({ userName, name, isFollowing }) {
+  const imageSrc = `https://unavatar.io/${userName}`
+  console.log(isFollowing)
   return (
     <article className='tw-followCard'>
       <header className='tw-followCard-header'>
-        <img className='tw-followCard-avatar' src="https://unavatar.io/sirnadie/" alt="El avatar de SirnNdie" />
+        <img className='tw-followCard-avatar'
+          src={imageSrc} 
+          alt="El avatar de SirNadie" />
         <div className='tw-followCard-info'>
-          <strong>Marc Rodriguez</strong>
-          <span className='tw-followCard-infoUserName'>@sirnadie</span>
+          <strong>{name}</strong>
+          <span className='tw-followCard-infoUserName'>{userName}</span>
         </div>
       </header>
       <aside>
