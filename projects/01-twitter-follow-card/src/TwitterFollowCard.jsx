@@ -1,7 +1,5 @@
-import './App.css'
-
-export function App (){
-  return(
+export function TwitterFollowCard() {
+  return (
     <article className='tw-followCard'>
       <header className='tw-followCard-header'>
         <img className='tw-followCard-avatar' src="https://unavatar.io/sirnadie/" alt="El avatar de SirnNdie" />
